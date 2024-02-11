@@ -43,7 +43,7 @@ const libraries = [
       `shadow-xl shadow-red-700/20 dark:shadow-lg dark:shadow-red-500/30 text-red-500 border-2 border-transparent hover:border-current`,
     to: '/query',
     tagline: `Powerful asynchronous state management, server-state utilities and data fetching`,
-    description: `Fetch, cache, update, and wrangle all forms of async data in your TS/JS, React, Vue, Solid & Svelte applications all without touching any "global state".`,
+    description: `Fetch, cache, update, and wrangle all forms of async data in your TS/JS, React, Vue, Solid, Svelte & Angular applications all without touching any "global state".`,
   },
   {
     name: 'TanStack Table',
@@ -69,7 +69,7 @@ const libraries = [
     tagline: `Headless UI for Virtualizing Large Element Lists`,
     description: `Virtualize only the visible content for massive scrollable DOM nodes at 60FPS in TS/JS, React, Vue, Solid & Svelte while retaining 100% control over markup and styles.`,
     // badge: (
-    //   <div className="uppercase text-white bg-purple-500 rounded-full px-2 py-1 text-xs font-black animate-pulse">
+    //   <div className="px-2 py-1 text-xs font-black text-white uppercase bg-purple-500 rounded-full animate-pulse">
     //     New
     //   </div>
     // ),
@@ -82,7 +82,7 @@ const libraries = [
     tagline: `Headless UI for building performant and type-safe forms`,
     description: `Headless, performant, and type-safe form state management for TS/JS, React, Solid, Svelte and Vue`,
     badge: (
-      <div className="uppercase text-white bg-yellow-500 rounded-full px-2 py-1 text-xs font-black animate-pulse">
+      <div className="px-2 py-1 text-xs font-black text-white uppercase bg-yellow-500 rounded-full animate-pulse">
         New
       </div>
     ),
@@ -103,7 +103,7 @@ const libraries = [
     tagline: `Headless range and multi-range slider utilities.`,
     description: `React ranger supplies the primitive range and multi-range slider logic as a headless API that can be attached to any styles or markup for that perfect design.`,
     badge: (
-      <div className="uppercase text-white bg-pink-500 rounded-full px-2 py-1 text-xs font-black animate-pulse">
+      <div className="px-2 py-1 text-xs font-black text-white uppercase bg-pink-500 rounded-full animate-pulse">
         New
       </div>
     ),
@@ -116,7 +116,7 @@ const libraries = [
     tagline: `Framework agnostic data store with reactive framework adapters`,
     description: `The core data store that powers TanStack libraries and their framework adapters. Use it if you dare.`,
     badge: (
-      <div className="flex items-center justify-center whitespace-nowrap uppercase text-white bg-slate-700 rounded-full px-2 py-1 text-xs font-black animate-pulse">
+      <div className="flex items-center justify-center px-2 py-1 text-xs font-black text-white uppercase rounded-full whitespace-nowrap bg-slate-700 animate-pulse">
         New
       </div>
     ),
@@ -174,8 +174,7 @@ export default function Index() {
   return (
     <>
       <div
-        className="flex flex-wrap py-2 px-4 items-center justify-center text-sm
-          md:text-base md:justify-end"
+        className="flex flex-wrap items-center justify-center px-4 py-2 text-sm md:text-base md:justify-end"
       >
         {[
           {
@@ -233,8 +232,8 @@ export default function Index() {
           )
         })}
       </div>
-      <div className="flex flex-col items-center gap-6 text-center px-4 py-12 lg:py-24">
-        <div className="flex gap-2 lg:gap-4 items-center">
+      <div className="flex flex-col items-center gap-6 px-4 py-12 text-center lg:py-24">
+        <div className="flex items-center gap-2 lg:gap-4">
           <LogoColor className="w-[40px] md:w-[60px] lg:w-[100px]" />
           <h1
             className={`inline-block
@@ -254,9 +253,7 @@ export default function Index() {
           </h1>
         </div>
         <h2
-          className="font-bold text-2xl max-w-md
-            md:text-3xl
-            lg:text-5xl lg:max-w-2xl"
+          className="max-w-md text-2xl font-bold md:text-3xl lg:text-5xl lg:max-w-2xl"
         >
           High-quality open-source software for{' '}
           <span className="underline decoration-dashed decoration-yellow-500 decoration-3 underline-offset-2">
@@ -264,8 +261,7 @@ export default function Index() {
           </span>
         </h2>
         <p
-          className="text opacity-90 max-w-sm
-            lg:text-xl lg:max-w-2xl"
+          className="max-w-sm text opacity-90 lg:text-xl lg:max-w-2xl"
         >
           Headless, type-safe, & powerful utilities for State Management,
           Routing, Data Visualization, Charts, Tables, and more.
@@ -293,7 +289,7 @@ export default function Index() {
                 }}
                 prefetch="intent"
               >
-                <div className="flex gap-2 justify-between items-center">
+                <div className="flex items-center justify-between gap-2">
                   <div className={`text-2xl font-extrabold `}>
                     {library.name}
                   </div>
@@ -315,11 +311,9 @@ export default function Index() {
         <h3 className={`text-4xl font-light mb-4`}>Partners</h3>
         <div className={`grid grid-cols-1 gap-12 sm:grid-cols-2`}>
           <div
-            className="bg-white shadow-xl shadow-gray-500/20 rounded-lg flex flex-col
-                        divide-y-2 divide-gray-500 divide-opacity-10 overflow-hidden
-                        dark:bg-gray-800 dark:shadow-none"
+            className="flex flex-col overflow-hidden bg-white divide-y-2 divide-gray-500 rounded-lg shadow-xl shadow-gray-500/20 divide-opacity-10 dark:bg-gray-800 dark:shadow-none"
           >
-            <div className="flex-1 bg-white flex items-center justify-center p-2">
+            <div className="flex items-center justify-center flex-1 p-2 bg-white">
               <a
                 href="https://ag-grid.com/react-data-grid/?utm_source=reacttable&utm_campaign=githubreacttable"
                 target="_blank"
@@ -334,7 +328,7 @@ export default function Index() {
                 />
               </a>
             </div>
-            <div className="flex-1 p-4 text-sm flex flex-col gap-4 items-start">
+            <div className="flex flex-col items-start flex-1 gap-4 p-4 text-sm">
               <div>
                 TanStack Table and AG Grid are respectfully the{' '}
                 <strong>best table/datagrid libraries around</strong>. Instead
@@ -345,7 +339,7 @@ export default function Index() {
               </div>
               <Link
                 to="/blog/ag-grid-partnership"
-                className="text-blue-500 uppercase font-black text-sm"
+                className="text-sm font-black text-blue-500 uppercase"
                 prefetch="intent"
               >
                 Learn More
@@ -353,11 +347,9 @@ export default function Index() {
             </div>
           </div>
           <div
-            className="bg-white shadow-xl shadow-gray-500/20 rounded-lg flex flex-col
-                        divide-y-2 divide-gray-500 divide-opacity-10 overflow-hidden
-                        dark:bg-gray-800 dark:shadow-none"
+            className="flex flex-col overflow-hidden bg-white divide-y-2 divide-gray-500 rounded-lg shadow-xl shadow-gray-500/20 divide-opacity-10 dark:bg-gray-800 dark:shadow-none"
           >
-            <div className="flex-1 bg-white flex items-center justify-center p-2">
+            <div className="flex items-center justify-center flex-1 p-2 bg-white">
               <a href="https://bytes.dev" target="_blank" rel="noreferrer">
                 <img
                   src={bytesUidotdevImage}
@@ -368,7 +360,7 @@ export default function Index() {
                 />
               </a>
             </div>
-            <div className="flex-1 p-4 text-sm flex flex-col gap-4 items-start">
+            <div className="flex flex-col items-start flex-1 gap-4 p-4 text-sm">
               <div>
                 TanStack's priority is to make its users productive, efficient
                 and knowledgeable about web dev. To help us on this quest, we've
@@ -400,18 +392,16 @@ export default function Index() {
                 href="https://bytes.dev/?utm_source=tanstack&utm_campaign=tanstack"
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-500 uppercase font-black text-sm"
+                className="text-sm font-black text-blue-500 uppercase"
               >
                 Learn More
               </a>
             </div>
           </div>
           <div
-            className="bg-white shadow-xl shadow-gray-500/20 rounded-lg flex flex-col
-                        divide-y-2 divide-gray-500 divide-opacity-10 overflow-hidden
-                        dark:bg-gray-800 dark:shadow-none"
+            className="flex flex-col overflow-hidden bg-white divide-y-2 divide-gray-500 rounded-lg shadow-xl shadow-gray-500/20 divide-opacity-10 dark:bg-gray-800 dark:shadow-none"
           >
-            <div className="flex-1 bg-white flex items-center justify-center p-2">
+            <div className="flex items-center justify-center flex-1 p-2 bg-white">
               <a
                 href="https://nozzle.io/?utm_source=tanstack&utm_campaign=tanstack"
                 target="_blank"
@@ -426,7 +416,7 @@ export default function Index() {
                 />
               </a>
             </div>
-            <div className="flex-1 p-4 text-sm flex flex-col gap-4 items-start">
+            <div className="flex flex-col items-start flex-1 gap-4 p-4 text-sm">
               <div>
                 Since its founding, Nozzle's SEO platform has used TanStack
                 libraries to build one of the{' '}
@@ -442,7 +432,7 @@ export default function Index() {
                 href="https://nozzle.io/?utm_source=tanstack&utm_campaign=tanstack"
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-500 uppercase font-black text-sm"
+                className="text-sm font-black text-blue-500 uppercase"
               >
                 Learn More
               </a>
@@ -453,7 +443,7 @@ export default function Index() {
       <div className="h-20" />
       <div className={`lg:max-w-[400px] px-4 mx-auto`}>
         <div className="flex flex-col gap-4">
-          <div className="shadow-lg rounded-lg overflow-hidden bg-white dark:bg-gray-800 dark:text-white">
+          <div className="overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 dark:text-white">
             <Carbon />
           </div>
           <span
@@ -546,7 +536,7 @@ export default function Index() {
         </div>
       </div>
       <div className="h-12" />
-      <div className="px-4 mx-auto max-w-screen-lg">
+      <div className="max-w-screen-lg px-4 mx-auto">
         <div
           className={`
           rounded-md p-4 grid gap-6
@@ -583,8 +573,8 @@ export default function Index() {
         </div>
       </div>
       <div className="h-4" />
-      <div className="px-4 mx-auto max-w-screen-lg relative">
-        <div className="rounded-md p-8 bg-white shadow-xl shadow-gray-900/10 md:p-14 dark:bg-gray-800">
+      <div className="relative max-w-screen-lg px-4 mx-auto">
+        <div className="p-8 bg-white rounded-md shadow-xl shadow-gray-900/10 md:p-14 dark:bg-gray-800">
           {!hasSubmitted ? (
             <Form method="post">
               <div>
